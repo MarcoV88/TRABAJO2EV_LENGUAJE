@@ -1,0 +1,35 @@
+body{
+    background-color: burlywood;
+    font-family: Arial;
+    margin: 20px
+}
+
+h1{
+    color: rgb(44, 36, 36)
+}
+
+div[data-product]{
+    border: solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+
+button:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+hr{
+    border: none;
+    border-top: 2px solid black;
+}
+
+div[data-ganador = true]{
+    background-color: blue;
+}

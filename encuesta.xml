@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<marcas>
+
+    <marca>
+        <nombre>Alpine</nombre>
+        <conteo>Numero de favoritos: 0</conteo>
+    </marca>
+
+    <marca>
+        <nombre>Aston_Martin</nombre>
+        <conteo>Numero de favoritos: 0</conteo>
+    </marca>
+
+    <marca>
+        <nombre>Audi</nombre>
+        <conteo>Numero de favoritos: 0</conteo>
+    </marca>
+
+    <marca>
+        <nombre>Cadillac</nombre>
+        <conteo>Numero de favoritos: 0</conteo>
+    </marca>
+    
+    <marca>
+        <nombre>Ferrari</nombre>
+        <conteo>Numero de favoritos: 0</conteo>
+    </marca>
+
+    <marca>
+        <nombre>Haas</nombre>
+        <conteo>Numero de favoritos: 0</conteo>
+    </marca>
+
+    <marca>
+        <nombre>McLaren</nombre>
+        <conteo>Numero de favoritos: 0</conteo>
+    </marca>
+
+    <marca>
+        <nombre>Mercedes</nombre>
+        <conteo>Numero de favoritos: 0</conteo>
+    </marca>
+
+    <marca>
+        <nombre>Racing_Bulls</nombre>
+        <conteo>Numero de favoritos: 0</conteo>
+    </marca>
+    
+    <marca>
+        <nombre>Red_Bull</nombre>
+        <conteo>Numero de favoritos: 0</conteo>
+    </marca>
+
+    <marca>
+        <nombre>Williams</nombre>
+        <conteo>Numero de favoritos: 0</conteo>
+    </marca>
+
+</marcas>
