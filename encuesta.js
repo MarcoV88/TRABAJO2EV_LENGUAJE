@@ -81,7 +81,6 @@ function actualizarGanador() {
     const todasLasMarcas = document.querySelectorAll("[data-product]");
     let maxVotos = 0;
     let nuevoGanador = null;
-    let hayEmpate = false;
 
     todasLasMarcas.forEach(marca => {
         marca.dataset.ganador = "false";
@@ -90,22 +89,17 @@ function actualizarGanador() {
         if (votos > maxVotos) {
             maxVotos = votos;
             nuevoGanador = marca;
-            hayEmpate = false;
-        } else if (votos === maxVotos && votos > 0) {
-            hayEmpate = true;
         }
     });
 
-    if (!hayEmpate && maxVotos > 0 && nuevoGanador) {
+    if (maxVotos > 0 && nuevoGanador) {
         nuevoGanador.dataset.ganador = "true";
         favoritos.innerHTML = `Favorito: ${nuevoGanador.dataset.nombre}`;
         fav = maxVotos;
         ganadorAct = nuevoGanador.dataset.nombre;
     } else if (maxVotos === 0) {
         favoritos.innerHTML = "Favorito: ";
-    } else if (hayEmpate) {
-        favoritos.innerHTML = "Favorito: Empate";
-    }
+    }   
 }
 
 function cerrarEncuesta() {

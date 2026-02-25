@@ -31,5 +31,5 @@ hr{
 }
 
 div[data-ganador = true]{
-    background-color: blue;
+    background-color: greenyellow;
 }
