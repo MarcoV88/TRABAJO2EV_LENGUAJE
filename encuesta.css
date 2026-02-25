@@ -33,3 +33,13 @@ hr{
 div[data-ganador = true]{
     background-color: greenyellow;
 }
+
+#modal-contenido{
+    border: solid black;
+    padding: 25px;
+    background: white;
+}
+
+#cerrarModal {
+    background: rgb(240, 69, 69);
+}

@@ -3,6 +3,10 @@ const btnReiniciar = document.getElementById("reiniciar");
 const contador = document.getElementById("contador");
 const favoritos = document.getElementById("favoritos");
 const contenedorMarcas = document.getElementById("marcas");
+const modal = document.getElementById('modal');
+const categoriaModal = document.getElementById('categoriaModal');
+const anioModal = document.getElementById('anioModal');
+const cerrarModal = document.getElementById('cerrarModal');
 
 let totalFavoritos = 0;
 let fav = 0;
@@ -99,8 +103,16 @@ function actualizarGanador() {
         ganadorAct = nuevoGanador.dataset.nombre;
     } else if (maxVotos === 0) {
         favoritos.innerHTML = "Favorito: ";
-    }   
+    } 
 }
+function abrirModal(elemento) {
+    categoriaModal.textContent = `Ganador: ${elemento.ganadorFinal}`;
+    anioModal.textContent = `Cantidad de votos: ${elemento.maxVotos}`;
+    modal.showModal();
+    }
+    cerrarModal.addEventListener("click", () => {
+        modal.close();
+    });
 
 function cerrarEncuesta() {
     const botones = document.querySelectorAll(".fav");
@@ -123,7 +135,10 @@ function cerrarEncuesta() {
     });
     
     if (maxVotos > 0) {
-        alert(`¡ENCUESTA CERRADA!\n\nEl ganador es: ${ganadorFinal}`);
+        abrirModal({ 
+            ganadorFinal: ganadorFinal, 
+            maxVotos: maxVotos 
+        });
     }
 }
 
